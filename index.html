@@ -1,59 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BB Furniture - Sujangarh</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; color: #333; }
-        header { background: #000; color: #fff; padding: 25px; text-align: center; font-size: 30px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
-        .hero { text-align: center; padding: 30px 15px; background: #fff; border-bottom: 2px solid #ddd; }
-        .hero h2 { font-size: 24px; margin-bottom: 20px; }
-        .hero img { width: 100%; max-width: 500px; border-radius: 10px; background: #eee; min-height: 250px; display: block; margin: 0 auto; }
-        .button-container { margin-top: 25px; }
-        .btn { display: inline-block; padding: 15px 25px; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 18px; margin: 5px; }
-        .btn-whatsapp { background: #25D366; }
-        .btn-call { background: #007bff; }
-        .gallery { padding: 40px 15px; text-align: center; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 15px; max-width: 1000px; margin: 0 auto; }
-        .gallery-grid img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; background: #ddd; display: block; }
-        .footer { background: #000; color: #fff; text-align: center; padding: 30px 15px; margin-top: 50px; font-size: 16px; line-height: 1.6; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BB Furniture</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5}
+header{background:#2c3e50;color:#fff;padding:15px;text-align:center}
+nav{display:flex;justify-content:center;background:#34495e}
+nav a{color:#fff;padding:10px 20px;text-decoration:none}
+nav a:hover{background:#2c3e50}
+.hero{background:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7') no-repeat center/cover;height:300px;color:white;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:bold}
+.container{padding:20px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:white;padding:10px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.2)}
+.card img{width:100%;border-radius:10px}
+.btn{display:block;text-align:center;background:#25D366;color:white;padding:10px;margin-top:10px;text-decoration:none;border-radius:5px}
+footer{background:#2c3e50;color:white;text-align:center;padding:10px;margin-top:20px}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:20px;text-decoration:none}
+</style>
 </head>
 <body>
 
-    <header>BB Furniture</header>
+<header>
+<h1>BB Furniture</h1>
+<p>Premium Furniture at Best Price</p>
+</header>
 
-    <section class="hero">
-        <h2>Premium Wooden Designs</h2>
-        <img src="hero.jpg" alt="Our Best Design">
-        
-        <div class="button-container">
-            <a href="https://wa.me/918209142748" class="btn btn-whatsapp">Order on WhatsApp</a>
-            <a href="tel:8209142748" class="btn btn-call">Call Now</a>
-        </div>
-    </section>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <section class="gallery">
-        <h3>Our Gallery</h3>
-        <div class="gallery-grid">
-            <img src="bed1.jpg" alt="Furniture 1">
-            <img src="door1.jpg" alt="Furniture 2">
-            <img src="bed2.jpg" alt="Furniture 3">
-            <img src="door2.jpg" alt="Furniture 4">
-            <img src="lounge.jpg" alt="Furniture 5">
-            <img src="table.jpg" alt="Furniture 6">
-        </div>
-    </section>
+<div class="hero">
+Stylish Furniture for Your Home
+</div>
 
-    <div class="footer">
-        <strong>BB Furniture</strong><br>
-        Sujangarh, Rajasthan<br>
-        Contact: 8209142748
-    </div>
+<div class="container" id="products">
+<h2>Our Products</h2>
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582582621959-48d27397dc69">
+<h3>Wooden Bed</h3>
+<p>Strong and premium quality bed.</p>
+<a class="btn" href="https://wa.me/918209142748?text=I%20want%20to%20order%20Wooden%20Bed">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598300053653-7c43a72d42c3">
+<h3>Sofa Set</h3>
+<p>Comfortable and modern sofa.</p>
+<a class="btn" href="https://wa.me/918209142748?text=I%20want%20to%20order%20Sofa%20Set">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1616627988400-9e3f5e9a821a">
+<h3>Wardrobe</h3>
+<p>Spacious and stylish wardrobe.</p>
+<a class="btn" href="https://wa.me/918209142748?text=I%20want%20to%20order%20Wardrobe">Order on WhatsApp</a>
+</div>
+
+</div>
+</div>
+
+<div class="container" id="contact">
+<h2>Contact Us</h2>
+<p>Phone: 8209142748</p>
+<p>Location: Sujangarh</p>
+<a class="btn" href="https://wa.me/918209142748">Chat on WhatsApp</a>
+</div>
+
+<footer>
+<p>© 2026 BB Furniture | All Rights Reserved</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/918209142748">💬</a>
 
 </body>
-</html>
+    </html>
+
 
 
 
