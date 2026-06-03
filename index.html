@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BB ELITE | Interior, Furniture & Doors</title>
+<title>BB ELITE | Furniture, Doors & Interior Solutions</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -17,24 +17,24 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
-background:#ffffff;
+background:#f8f8f8;
 color:#222;
 overflow-x:hidden;
 }
 
-a{
-text-decoration:none;
+html{
+scroll-behavior:smooth;
 }
 
 .container{
-width:90%;
+width:92%;
 max-width:1200px;
 margin:auto;
+}
+
+a{
+text-decoration:none;
 }
 
 header{
@@ -42,8 +42,8 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-background:#fff;
-box-shadow:0 2px 15px rgba(0,0,0,0.08);
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
 z-index:999;
 }
 
@@ -67,27 +67,27 @@ object-fit:contain;
 }
 
 .logo h2{
-font-size:24px;
+font-size:26px;
 font-weight:800;
 color:#111827;
 }
 
 .nav-links{
 display:flex;
-gap:25px;
+gap:20px;
 }
 
 .nav-links a{
 font-weight:600;
-color:#333;
+color:#111827;
 }
 
 .hero{
 margin-top:80px;
 min-height:100vh;
 background:
-linear-gradient(rgba(0,0,0,0.55),
-rgba(0,0,0,0.55)),
+linear-gradient(rgba(0,0,0,.55),
+rgba(0,0,0,.55)),
 url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
 background-size:cover;
 background-position:center;
@@ -104,7 +104,7 @@ color:white;
 }
 
 .hero-content h1{
-font-size:58px;
+font-size:60px;
 font-weight:800;
 line-height:1.2;
 margin-bottom:20px;
@@ -116,19 +116,12 @@ line-height:1.8;
 margin-bottom:30px;
 }
 
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-}
-
 .btn{
+display:inline-block;
 padding:15px 30px;
 border-radius:8px;
 font-weight:700;
-display:inline-block;
-transition:.3s;
+margin:5px;
 }
 
 .btn-call{
@@ -141,29 +134,84 @@ background:#25D366;
 color:white;
 }
 
-.btn:hover{
-transform:translateY(-3px);
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:42px;
+font-weight:800;
+color:#111827;
+}
+
+.section-title p{
+color:#666;
+margin-top:10px;
+}
+
+.gold-section{
+background:#f59e0b;
+color:white;
+padding:70px 20px;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111827;
+color:white;
+padding:30px;
+border-radius:16px;
+border:2px solid #f59e0b;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.price{
+font-size:34px;
+font-weight:800;
+color:#f59e0b;
+margin-bottom:15px;
+}
+
+.service-card{
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 @media(max-width:768px){
 
-.logo h2{
-font-size:20px;
+.navbar{
+flex-direction:column;
+gap:10px;
 }
 
 .nav-links{
-display:flex;
-gap:10px;
 flex-wrap:wrap;
 justify-content:center;
-  }
+}
 
 .hero-content h1{
-font-size:34px;
+font-size:36px;
 }
 
 .hero-content p{
 font-size:16px;
+}
+
+.section-title h2{
+font-size:30px;
 }
 
 }
@@ -174,6 +222,7 @@ font-size:16px;
 <body>
 
 <header>
+
 <div class="container navbar">
 
 <div class="logo">
@@ -189,6 +238,7 @@ font-size:16px;
 </div>
 
 </div>
+
 </header>
 
 <section class="hero">
@@ -196,16 +246,13 @@ font-size:16px;
 <div class="hero-content">
 
 <h1>
-Complete Home Interior &
-Furniture Experts
+Complete Home Interior & Furniture Experts
 </h1>
 
 <p>
-From Custom Furniture to Complete Home Interiors —
+From Custom Furniture To Complete Home Interiors —
 Crafted For Rajasthan Homes.
 </p>
-
-<div class="hero-buttons">
 
 <a href="tel:8209142748" class="btn btn-call">
 📞 Call Now
@@ -217,55 +264,51 @@ Crafted For Rajasthan Homes.
 
 </div>
 
-</div>
-
 </section>
-<section style="
-background:#f59e0b;
-padding:60px 20px;
-text-align:center;
-color:white;
-">
 
-<div class="container">
+<section class="gold-section">
 
-<h2 style="
-font-size:42px;
-margin-bottom:15px;
-font-weight:800;
-">
+<h2 style="font-size:42px;font-weight:800;">
 FREE COST ESTIMATE
 </h2>
 
-<p style="
-font-size:20px;
-max-width:800px;
-margin:auto;
-line-height:1.8;
-">
+<p style="margin-top:15px;font-size:18px;">
 Get Pricing Within 24 Hours For Furniture,
-Doors, Modular Kitchen & Complete Home Interiors.
+Doors, Kitchen & Complete Interior Projects.
 </p>
 
-<div style="
-margin-top:30px;
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-">
+</section>
 
-<a href="tel:8209142748"
-class="btn"
-style="background:#111827;color:white;">
-Call For Estimate
-</a>
+<section id="services" style="padding:90px 0;">
 
-<a href="https://wa.me/918209142748"
-class="btn"
-style="background:#25D366;color:white;">
-WhatsApp Quote
-</a>
+<div class="container">
+
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Premium Solutions For Homes & Commercial Spaces</p>
+</div>
+
+<div class="cards">
+
+<div class="service-card">
+<h3>🏠 Full Home Interior</h3>
+<p>Complete Interior Solutions For Villas, Homes & Apartments.</p>
+</div>
+
+<div class="service-card">
+<h3>🍽 Modular Kitchen</h3>
+<p>Modern Kitchen Designs With Premium Materials.</p>
+</div>
+
+<div class="service-card">
+<h3>🚪 Premium Doors</h3>
+<p>Flush Doors, Sagwan Doors & Designer Entry Doors.</p>
+</div>
+
+<div class="service-card">
+<h3>🪑 Custom Furniture</h3>
+<p>Beds, Sofas, Dining Tables & Office Furniture.</p>
+</div>
 
 </div>
 
@@ -273,87 +316,38 @@ WhatsApp Quote
 
 </section>
 
-<section id="services" style="
-padding:90px 0;
-background:white;
-">
+<section id="packages" style="padding:90px 0;">
 
 <div class="container">
 
-<div style="text-align:center;margin-bottom:60px;">
-
-<h2 style="
-font-size:42px;
-font-weight:800;
-color:#111827;
-">
-Our Services
-</h2>
-
-<p style="
-margin-top:15px;
-font-size:18px;
-color:#666;
-">
-Premium Furniture, Doors & Interior Solutions
-</p>
-
+<div class="section-title">
+<h2>Interior Packages</h2>
+<p>Choose The Right Package For Your Home</p>
 </div>
 
-<div style="
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-">
+<div class="cards">
 
-<div style="
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-">
-
-<h3>🏠 Full Home Interior</h3>
-
-<p style="margin-top:15px;color:#666;">
-Complete Interior Solutions For Villas,
-Homes & Apartments.
-  </p>
-  <!-- PACKAGES SECTION -->
-
-<section id="packages" style="padding:90px 0;background:#f8f8f8;">
-
-<div class="container">
-
-<div style="text-align:center;margin-bottom:60px;">
-<h2 style="font-size:42px;font-weight:800;">Interior Packages</h2>
-<p style="color:#666;">Choose The Right Package For Your Home</p>
-</div>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;">
-
-<div style="background:white;padding:30px;border-radius:15px;">
+<div class="card">
 <h3>Essential</h3>
-<h1 style="color:#f59e0b;">₹1800/sqft</h1>
+<div class="price">₹1800/sqft</div>
 <p>Kitchen + Wardrobe + TV Unit + Basic Interior</p>
 </div>
 
-<div style="background:#111827;color:white;padding:30px;border-radius:15px;">
+<div class="card">
 <h3>⭐ Premium</h3>
-<h1 style="color:#f59e0b;">₹2100/sqft</h1>
+<div class="price">₹2100/sqft</div>
 <p>Most Popular Package With Premium Finishes</p>
-</div>
-
-<div style="background:white;padding:30px;border-radius:15px;">
+  </div>
+  <div class="card">
 <h3>Luxury</h3>
-<h1 style="color:#f59e0b;">₹2500/sqft</h1>
-<p>Luxury Materials & Designer Interiors</p>
+<div class="price">₹2500/sqft</div>
+<p>Luxury Materials, Designer Interiors & Premium Finishes.</p>
 </div>
 
-<div style="background:white;padding:30px;border-radius:15px;">
+<div class="card">
 <h3>Elite Custom</h3>
-<h1 style="color:#f59e0b;">₹3500+/sqft</h1>
-<p>Fully Customized Design & Premium Materials</p>
+<div class="price">₹3500+/sqft</div>
+<p>Fully Customized Design & Luxury Materials.</p>
 </div>
 
 </div>
@@ -362,85 +356,39 @@ Homes & Apartments.
 
 </section>
 
-
-<!-- KITCHEN -->
-
-<section style="padding:80px 0;">
+<section style="padding:90px 0;background:white;">
 
 <div class="container">
 
-<h2 style="text-align:center;margin-bottom:40px;">
-Modular Kitchen Packages
-</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
-
-<div style="background:white;padding:25px;border-radius:12px;">₹1500/sqft</div>
-<div style="background:white;padding:25px;border-radius:12px;">₹2200/sqft</div>
-<div style="background:white;padding:25px;border-radius:12px;">₹2800/sqft</div>
-<div style="background:white;padding:25px;border-radius:12px;">₹3500+/sqft</div>
-
+<div class="section-title">
+<h2>Kitchen, Wardrobe & Doors Pricing</h2>
+<p>Custom Solutions For Every Requirement</p>
 </div>
 
+<div class="cards">
+
+<div class="card">
+<h3>🍽 Modular Kitchen</h3>
+<div class="price">₹1500 - ₹3500+/sqft</div>
+<p>Basic, Premium, Luxury & Custom Kitchen Packages.</p>
 </div>
 
-</section>
-
-
-<!-- WARDROBE -->
-
-<section style="padding:80px 0;background:#f8f8f8;">
-
-<div class="container">
-
-<h2 style="text-align:center;margin-bottom:40px;">
-Wardrobe & TV Unit Packages
-</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
-
-<div style="background:white;padding:25px;border-radius:12px;">₹1200/sqft</div>
-<div style="background:white;padding:25px;border-radius:12px;">₹1800/sqft</div>
-<div style="background:white;padding:25px;border-radius:12px;">₹2500/sqft</div>
-<div style="background:white;padding:25px;border-radius:12px;">₹3500+/sqft</div>
-
+<div class="card">
+<h3>🪞 Wardrobe & TV Unit</h3>
+<div class="price">₹1200 - ₹3500+/sqft</div>
+<p>Sliding, Hinged & Fully Customized Designs.</p>
 </div>
 
+<div class="card">
+<h3>🚪 Premium Doors</h3>
+<div class="price">₹3,500+</div>
+<p>Flush Doors, Sagwan Doors, Designer Entry Doors & Luxury Options.</p>
 </div>
 
-</section>
-
-
-<!-- DOORS -->
-
-<section style="padding:80px 0;">
-
-<div class="container">
-
-<h2 style="text-align:center;margin-bottom:40px;">
-Premium Doors Collection
-</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
-
-<div style="background:white;padding:25px;border-radius:12px;">
-🚪 Flush Doors <br><br>
-Starting ₹3,500+
-</div>
-
-<div style="background:white;padding:25px;border-radius:12px;">
-🚪 Decorative Doors <br><br>
-Starting ₹8,000+
-</div>
-
-<div style="background:white;padding:25px;border-radius:12px;">
-🚪 Sagwan Doors <br><br>
-Starting ₹25,000+
-</div>
-
-<div style="background:white;padding:25px;border-radius:12px;">
-🚪 Luxury Custom Doors <br><br>
-₹50,000 - ₹1,00,000+
+<div class="card">
+<h3>📋 Custom Quote</h3>
+<div class="price">FREE</div>
+<p>Get A Personalized Estimate Based On Your Design & Requirements.</p>
 </div>
 
 </div>
@@ -449,54 +397,36 @@ Starting ₹25,000+
 
 </section>
 
-
-<!-- CUSTOM QUOTE -->
-
-<section style="padding:70px 20px;background:#f59e0b;color:white;text-align:center;">
+<section id="gallery" style="padding:90px 0;background:#f8f8f8;">
 
 <div class="container">
 
-<h2 style="font-size:42px;">
-Need Custom Design?
-</h2>
-
-<p style="margin-top:20px;font-size:18px;">
-Get FREE Custom Quote For Furniture, Doors & Interior Work
-</p>
-
-<a href="https://wa.me/918209142748"
-style="
-display:inline-block;
-margin-top:25px;
-background:white;
-color:#111827;
-padding:15px 30px;
-border-radius:8px;
-font-weight:700;">
-Get Free Estimate
-</a>
-
+<div class="section-title">
+<h2>Featured Projects</h2>
+<p>Furniture, Doors & Interior Solutions</p>
 </div>
 
-</section>
+<div class="cards">
 
-
-<!-- GALLERY -->
-
-<section id="gallery" style="padding:90px 0;">
-
-<div class="container">
-
-<div style="text-align:center;margin-bottom:50px;">
-<h2 style="font-size:42px;">Featured Projects</h2>
+<div class="service-card">
+<h3>Luxury Bedroom Interior</h3>
+<p>Premium Interior Design & Finishing.</p>
 </div>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+<div class="service-card">
+<h3>Designer Wooden Door</h3>
+<p>Modern Entrance Door Collection.</p>
+</div>
 
-<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858" style="width:100%;border-radius:15px;">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" style="width:100%;border-radius:15px;">
-<img src="https://images.unsplash.com/photo-1494526585095-c41746248156" style="width:100%;border-radius:15px;">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" style="width:100%;border-radius:15px;">
+<div class="service-card">
+<h3>Custom Furniture</h3>
+<p>Sofas, Beds, Tables & More.</p>
+</div>
+
+<div class="service-card">
+<h3>Modular Kitchen</h3>
+<p>Functional & Elegant Kitchen Designs.</p>
+</div>
 
 </div>
 
@@ -504,14 +434,20 @@ Get Free Estimate
 
 </section>
 
-
-<!-- REVIEW -->
-
-<section style="padding:80px 0;background:#f8f8f8;">
+<section style="padding:90px 0;background:white;">
 
 <div class="container">
 
-<div style="max-width:800px;margin:auto;text-align:center;background:white;padding:40px;border-radius:15px;">
+<div style="
+max-width:800px;
+margin:auto;
+background:#111827;
+color:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+border:2px solid #f59e0b;
+">
 
 <h2>⭐⭐⭐⭐⭐</h2>
 
@@ -519,10 +455,15 @@ Get Free Estimate
 Khushi Saini
 </h3>
 
-<p style="margin-top:20px;color:#666;line-height:1.8;">
+<p style="
+margin-top:20px;
+line-height:1.8;
+">
+
 Excellent workmanship, premium quality materials and timely project completion.
 BB ELITE transformed our home exactly the way we wanted.
 Highly recommended for furniture, doors and interior work.
+
 </p>
 
 </div>
@@ -531,38 +472,34 @@ Highly recommended for furniture, doors and interior work.
 
 </section>
 
-
-<!-- CONTACT -->
-
-<section id="contact" style="padding:90px 0;">
+<section id="contact" style="padding:90px 0;background:#f8f8f8;">
 
 <div class="container">
 
+<div class="section-title">
+<h2>Contact BB ELITE</h2>
+<p>Get Your Free Estimate Today</p>
+</div>
+
 <div style="text-align:center;">
 
-<h2 style="font-size:42px;">
-Contact BB ELITE
-</h2>
-
-<p style="margin-top:25px;">
+<p style="font-size:20px;margin-bottom:15px;">
 📞 8209142748
 </p>
 
-<p>
+<p style="font-size:20px;margin-bottom:15px;">
 📧 jangiryatharth9@gmail.com
 </p>
 
-<p>
+<p style="font-size:20px;margin-bottom:25px;">
 📍 Near Canara Bank, Station Road, Sujangarh, Rajasthan
 </p>
 
-<a href="tel:8209142748"
-style="display:inline-block;background:#111827;color:white;padding:14px 30px;border-radius:8px;margin-top:20px;">
+<a href="tel:8209142748" class="btn btn-call">
 Call Now
 </a>
 
-<a href="https://wa.me/918209142748"
-style="display:inline-block;background:#25D366;color:white;padding:14px 30px;border-radius:8px;margin-top:20px;">
+<a href="https://wa.me/918209142748" class="btn btn-whatsapp">
 WhatsApp
 </a>
 
@@ -572,32 +509,31 @@ WhatsApp
 
 </section>
 
-
 <a href="https://wa.me/918209142748"
 style="
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 background:#25D366;
 color:white;
 padding:15px 20px;
 border-radius:50px;
 font-weight:700;
-z-index:9999;">
+z-index:9999;
+">
 WhatsApp
 </a>
-
 
 <footer style="
 background:#111827;
 color:white;
 text-align:center;
-padding:40px 20px;
+padding:50px 20px;
 ">
 
-<h3>BB ELITE</h3>
+<h2>BB ELITE</h2>
 
-<p style="margin-top:10px;">
+<p style="margin-top:15px;">
 Furniture • Doors • Interior Solutions
 </p>
 
@@ -612,4 +548,4 @@ Serving Rajasthan & Nearby Cities
 </footer>
 
 </body>
-</html>
+  </html>
