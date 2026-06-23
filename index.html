@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>BB ELITE | Furniture, Doors & Interior Solutions</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
+<title>BB ELITE Furniture | Interior | Doors</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"><style>
 
 *{
 margin:0;
@@ -18,590 +12,627 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f8f8f8;
-color:#222;
-overflow-x:hidden;
-}
-
-html{
-scroll-behavior:smooth;
+background:#ffffff;
+color:#111;
+line-height:1.6;
 }
 
 .container{
-width:92%;
+width:90%;
 max-width:1200px;
 margin:auto;
 }
 
-a{
-text-decoration:none;
-}
+/* NAVBAR */
 
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
+nav{
 background:white;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
-z-index:999;
+box-shadow:0 2px 15px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-.navbar{
+.nav-container{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:12px 0;
+padding:15px 0;
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:10px;
+font-size:30px;
+font-weight:700;
+color:#111;
 }
 
-.logo img{
-width:55px;
-height:55px;
-object-fit:contain;
-}
-
-.logo h2{
-font-size:26px;
-font-weight:800;
-color:#111827;
+.logo span{
+color:#D4AF37;
 }
 
 .nav-links{
 display:flex;
-gap:20px;
+gap:25px;
 }
 
 .nav-links a{
-font-weight:600;
-color:#111827;
+text-decoration:none;
+color:#111;
+font-weight:500;
+transition:.3s;
 }
 
+.nav-links a:hover{
+color:#D4AF37;
+}
+
+/* HERO SECTION */
+
 .hero{
-margin-top:80px;
-min-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.55),
-rgba(0,0,0,.55)),
-url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
+padding:80px 0;
+background:linear-gradient(to bottom,#ffffff,#f8f8f8);
 }
 
 .hero-content{
-max-width:900px;
-color:white;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+flex-wrap:wrap;
 }
 
-.hero-content h1{
-font-size:60px;
-font-weight:800;
-line-height:1.2;
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:55px;
+line-height:1.1;
 margin-bottom:20px;
 }
 
-.hero-content p{
-font-size:20px;
-line-height:1.8;
+.hero-text h1 span{
+color:#D4AF37;
+}
+
+.hero-text p{
+font-size:18px;
 margin-bottom:30px;
+color:#555;
+}
+
+.hero-features{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-bottom:30px;
+}
+
+.hero-features div{
+background:white;
+padding:10px 18px;
+border-radius:30px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 .btn{
 display:inline-block;
-padding:15px 30px;
+padding:14px 30px;
+background:#D4AF37;
+color:white;
+text-decoration:none;
 border-radius:8px;
-font-weight:700;
-margin:5px;
+font-weight:600;
+margin-right:10px;
 }
 
-.btn-call{
-background:#f59e0b;
-color:white;
+.btn:hover{
+opacity:.9;
 }
 
-.btn-whatsapp{
-background:#25D366;
-color:white;
+.btn-outline{
+background:white;
+color:#111;
+border:2px solid #D4AF37;
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:500px;
+}
+
+/* ABOUT */
+
+.about{
+padding:90px 0;
 }
 
 .section-title{
 text-align:center;
-margin-bottom:50px;
+font-size:40px;
+margin-bottom:20px;
 }
 
-.section-title h2{
-font-size:42px;
-font-weight:800;
-color:#111827;
+.gold{
+color:#D4AF37;
 }
 
-.section-title p{
-color:#666;
-margin-top:10px;
-}
-
-.gold-section{
-background:#f59e0b;
-color:white;
-padding:70px 20px;
+.about p{
+max-width:900px;
+margin:auto;
 text-align:center;
+font-size:18px;
+color:#555;
+}
+
+/* WHY CHOOSE US */
+
+.why{
+padding:90px 0;
+background:#fafafa;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
+margin-top:50px;
 }
 
 .card{
-background:#111827;
-color:white;
+background:white;
 padding:30px;
-border-radius:16px;
-border:2px solid #f59e0b;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
 margin-bottom:15px;
+color:#D4AF37;
 }
 
-.price{
-font-size:34px;
-font-weight:800;
-color:#f59e0b;
-margin-bottom:15px;
+/* SERVICES */
+
+.services{
+padding:90px 0;
 }
 
-.service-card{
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.service-box{
 background:white;
-padding:30px;
-border-radius:16px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.service-box h3{
+margin-bottom:15px;
+color:#D4AF37;
+}
+
+.service-box p{
+color:#666;
 }
 
 @media(max-width:768px){
 
-.navbar{
-flex-direction:column;
-gap:10px;
+.hero-text h1{
+font-size:38px;
 }
 
 .nav-links{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.hero-content h1{
-font-size:36px;
-}
-
-.hero-content p{
-font-size:16px;
-}
-
-.section-title h2{
-font-size:30px;
+display:none;
 }
 
 }
 
-</style>
-</head>
+</style></head><body><!-- NAVBAR --><nav>
+<div class="container nav-container"><div class="logo">
+BB <span>ELITE</span>
+</div><div class="nav-links">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Projects</a>
+<a href="#">Reviews</a>
+<a href="#">Contact</a>
+</div></div>
+</nav><!-- HERO SECTION --><section class="hero"><div class="container hero-content"><div class="hero-text"><h1>
+Premium <span>Furniture</span><br>
+Interior & Doors
+</h1><p>
+BB ELITE delivers luxury furniture, custom doors,
+modular kitchens, wardrobes and complete interior
+solutions across Rajasthan.
+</p><div class="hero-features">
+<div>✅ Free Site Visit</div>
+<div>✅ Free Estimate</div>
+<div>✅ Premium Quality</div>
+</div><a href="#estimate" class="btn">Get Free Estimate</a>
 
-<body>
-
-<header>
-
-<div class="container navbar">
-
-<div class="logo">
+<a href="tel:8209142748" class="btn btn-outline">
+Call Now
+</a></div><div class="hero-image">
 <img src="logo.png" alt="BB ELITE">
-<h2>BB ELITE</h2>
-</div>
-
-<div class="nav-links">
-<a href="#packages">Packages</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
-</div>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>
-Complete Home Interior & Furniture Experts
-</h1>
-
-<p>
-From Custom Furniture To Complete Home Interiors —
-Crafted For Rajasthan Homes.
-</p>
-
-<a href="tel:8209142748" class="btn btn-call">
-📞 Call Now
-</a>
-
-<a href="https://wa.me/918209142748" class="btn btn-whatsapp">
-💬 WhatsApp
-</a>
-
-</div>
-
-</section>
-
-<section class="gold-section">
-
-<h2 style="font-size:42px;font-weight:800;">
-FREE COST ESTIMATE
-</h2>
-
-<p style="margin-top:15px;font-size:18px;">
-Get Pricing Within 24 Hours For Furniture,
-Doors, Kitchen & Complete Interior Projects.
-</p>
-
-</section>
-
-<section id="services" style="padding:90px 0;">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Our Services</h2>
-<p>Premium Solutions For Homes & Commercial Spaces</p>
-</div>
-
-<div class="cards">
-
-<div class="service-card">
-<h3>🏠 Full Home Interior</h3>
-<p>Complete Interior Solutions For Villas, Homes & Apartments.</p>
-</div>
-
-<div class="service-card">
-<h3>🍽 Modular Kitchen</h3>
-<p>Modern Kitchen Designs With Premium Materials.</p>
-</div>
-
-<div class="service-card">
-<h3>🚪 Premium Doors</h3>
-<p>Flush Doors, Sagwan Doors & Designer Entry Doors.</p>
-</div>
-
-<div class="service-card">
-<h3>🪑 Custom Furniture</h3>
-<p>Beds, Sofas, Dining Tables & Office Furniture.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="packages" style="padding:90px 0;">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Interior Packages</h2>
-<p>Choose The Right Package For Your Home</p>
-</div>
-
-<div class="cards">
-
-<div class="card">
-<h3>Essential</h3>
-<div class="price">₹1800/sqft</div>
-<p>Kitchen + Wardrobe + TV Unit + Basic Interior</p>
-</div>
-
-<div class="card">
-<h3>⭐ Premium</h3>
-<div class="price">₹2100/sqft</div>
-<p>Most Popular Package With Premium Finishes</p>
-  </div>
-  <div class="card">
-<h3>Luxury</h3>
-<div class="price">₹2500/sqft</div>
-<p>Luxury Materials, Designer Interiors & Premium Finishes.</p>
-</div>
-
-<div class="card">
-<h3>Elite Custom</h3>
-<div class="price">₹3500+/sqft</div>
-<p>Fully Customized Design & Luxury Materials.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section style="padding:90px 0;background:white;">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Kitchen, Wardrobe & Doors Pricing</h2>
-<p>Custom Solutions For Every Requirement</p>
-</div>
-
-<div class="cards">
-
-<div class="card">
-<h3>🍽 Modular Kitchen</h3>
-<div class="price">₹1500 - ₹3500+/sqft</div>
-<p>Basic, Premium, Luxury & Custom Kitchen Packages.</p>
-</div>
-
-<div class="card">
-<h3>🪞 Wardrobe & TV Unit</h3>
-<div class="price">₹1200 - ₹3500+/sqft</div>
-<p>Sliding, Hinged & Fully Customized Designs.</p>
-</div>
-
-<div class="card">
-<h3>🚪 Premium Doors</h3>
-<div class="price">₹3,500+</div>
-<p>Flush Doors, Sagwan Doors, Designer Entry Doors & Luxury Options.</p>
-</div>
-
-<div class="card">
-<h3>📋 Custom Quote</h3>
-<div class="price">FREE</div>
-<p>Get A Personalized Estimate Based On Your Design & Requirements.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="gallery" style="padding:90px 0;background:#f8f8f8;">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Featured Projects</h2>
-<p>Furniture, Doors & Interior Solutions</p>
-</div>
-
-<div class="cards">
-
-<div class="service-card">
-<h3>Luxury Bedroom Interior</h3>
-<p>Premium Interior Design & Finishing.</p>
-</div>
-
-<div class="service-card">
-<h3>Designer Wooden Door</h3>
-<p>Modern Entrance Door Collection.</p>
-</div>
-
-<div class="service-card">
+</div></div></section><!-- ABOUT --><section class="about"><div class="container"><h2 class="section-title">
+About <span class="gold">BB ELITE</span>
+</h2><p>
+BB ELITE Furniture | Interior | Doors specializes
+in premium furniture manufacturing, modular kitchens,
+wardrobes, wooden doors and complete interior projects.
+We combine expert craftsmanship, quality materials and
+modern design to create beautiful spaces that last.
+</p></div></section><!-- WHY CHOOSE US --><section class="why"><div class="container"><h2 class="section-title">
+Why Choose <span class="gold">Us</span>
+</h2><div class="cards"><div class="card">
 <h3>Custom Furniture</h3>
-<p>Sofas, Beds, Tables & More.</p>
-</div>
+<p>Designed and manufactured according to your requirements.</p>
+</div><div class="card">
+<h3>Premium Materials</h3>
+<p>Only high-quality materials and trusted hardware brands.</p>
+</div><div class="card">
+<h3>On-Time Delivery</h3>
+<p>Professional project management and timely completion.</p>
+</div><div class="card">
+<h3>Direct Pricing</h3>
+<p>No middlemen. Better quality at competitive prices.</p>
+</div></div></div></section><!-- SERVICES --><section class="services"><div class="container"><h2 class="section-title">
+Our <span class="gold">Services</span>
+</h2><div class="service-grid"><div class="service-box">
+<h3>Luxury Furniture</h3>
+<p>Premium sofas, beds, tables and custom furniture.</p>
+</div><div class="service-box">
+<h3>Modular Kitchens</h3>
+<p>Stylish and functional kitchen solutions.</p>
+</div><div class="service-box">
+<h3>Wardrobes</h3>
+<p>Modern wardrobes with smart storage options.</p>
+</div><div class="service-box">
+<h3>Wooden Doors</h3>
+<p>Elegant wooden doors crafted with precision.</p>
+</div><div class="service-box">
+<h3>Office Interiors</h3>
+<p>Professional office furniture and interior design.</p>
+</div><div class="service-box">
+<h3>Complete Interiors</h3>
+<p>End-to-end home and commercial interior solutions.</p>
+</div></div></div></section><!-- ================= PROJECT GALLERY ================= --><section class="gallery"><style>
 
-<div class="service-card">
+.gallery{
+padding:90px 0;
+background:#fafafa;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.gallery-item{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.gallery-item img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.gallery-item h3{
+padding:20px;
+text-align:center;
+color:#D4AF37;
+}
+
+</style><div class="container"><h2 class="section-title">
+Featured <span class="gold">Projects</span>
+</h2><div class="gallery-grid"><div class="gallery-item">
+<img src="door1.jpg">
+<h3>Premium Wooden Doors</h3>
+</div><div class="gallery-item">
+<img src="kitchen1.jpg">
 <h3>Modular Kitchen</h3>
-<p>Functional & Elegant Kitchen Designs.</p>
-</div>
+</div><div class="gallery-item">
+<img src="wardrobe1.jpg">
+<h3>Luxury Wardrobe</h3>
+</div><div class="gallery-item">
+<img src="bedroom1.jpg">
+<h3>Modern Bedroom</h3>
+</div><div class="gallery-item">
+<img src="office1.jpg">
+<h3>Office Interior</h3>
+</div><div class="gallery-item">
+<img src="living1.jpg">
+<h3>Living Room Interior</h3>
+</div></div></div></section><!-- ================= PACKAGES ================= --><section class="packages"><style>
 
-</div>
+.packages{
+padding:90px 0;
+}
 
-</div>
+.package-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:50px;
+}
 
-</section>
-
-<section style="padding:90px 0;background:white;">
-
-<div class="container">
-
-<div style="
-max-width:800px;
-margin:auto;
-background:#111827;
-color:white;
+.package{
+background:white;
 padding:40px;
 border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
 text-align:center;
-border:2px solid #f59e0b;
-">
+}
 
-<h2>⭐⭐⭐⭐⭐</h2>
+.package h3{
+color:#D4AF37;
+margin-bottom:15px;
+}
 
-<h3 style="margin-top:15px;">
-Khushi Saini
-</h3>
-
-<p style="
-margin-top:20px;
-line-height:1.8;
-">
-
-Excellent workmanship, premium quality materials and timely project completion.
-BB ELITE transformed our home exactly the way we wanted.
-Highly recommended for furniture, doors and interior work.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" style="padding:90px 0;background:#f8f8f8;">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Contact BB ELITE</h2>
-<p>Get Your Free Estimate Today</p>
-</div>
-
-<div style="text-align:center;">
-
-<p style="font-size:20px;margin-bottom:15px;">
-📞 8209142748
-</p>
-
-<p style="font-size:20px;margin-bottom:15px;">
-📧 jangiryatharth9@gmail.com
-</p>
-
-<p style="font-size:20px;margin-bottom:25px;">
-📍 Near Canara Bank, Station Road, Sujangarh, Rajasthan
-</p>
-
-<a href="tel:8209142748" class="btn btn-call">
-Call Now
-</a>
-
-<a href="https://wa.me/918209142748" class="btn btn-whatsapp">
-WhatsApp
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<a href="https://wa.me/918209142748"
-style="
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
+.price{
+font-size:40px;
 font-weight:700;
-z-index:9999;
-">
-WhatsApp
-</a>
+margin-bottom:20px;
+}
 
-<footer style="
-background:#111827;
-color:white;
-text-align:center;
-padding:50px 20px;
-">
+.package ul{
+list-style:none;
+}
 
-<h2>BB ELITE</h2>
+.package ul li{
+padding:10px 0;
+border-bottom:1px solid #eee;
+}
 
-<p style="margin-top:15px;">
-Furniture • Doors • Interior Solutions
-</p>
+</style><div class="container"><h2 class="section-title">
+Interior <span class="gold">Packages</span>
+</h2><div class="package-grid"><div class="package">
+<h3>Basic Package</h3>
+<div class="price">₹1800/sq.ft</div><ul>
+<li>Modular Kitchen</li>
+<li>Basic Wardrobe</li>
+<li>TV Unit</li>
+<li>Standard Hardware</li>
+</ul>
+</div><div class="package">
+<h3>Premium Package</h3>
+<div class="price">₹2500/sq.ft</div><ul>
+<li>Premium Kitchen</li>
+<li>Luxury Wardrobe</li>
+<li>False Ceiling</li>
+<li>Premium Hardware</li>
+</ul>
+</div><div class="package">
+<h3>Luxury Package</h3>
+<div class="price">₹3500+/sq.ft</div><ul>
+<li>Complete Interior</li>
+<li>Designer Furniture</li>
+<li>Luxury Finishes</li>
+<li>Top Quality Hardware</li>
+</ul>
+</div></div></div></section><!-- ================= HOW WE WORK ================= --><section class="process"><style>
 
-<p style="margin-top:10px;">
-Serving Rajasthan & Nearby Cities
-</p>
+.process{
+padding:90px 0;
+background:#fafafa;
+}
 
-<p style="margin-top:20px;">
-© 2026 BB ELITE. All Rights Reserved.
-</p>
+.process-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+margin-top:50px;
+}
 
-</footer>
-
-</body>
-  </html>
-<section style="padding:90px 0;background:#111827;color:white;">
-
-<div class="container">
-
-<div class="section-title">
-<h2 style="color:white;">Get Free Cost Estimate</h2>
-<p style="color:#ddd;">Fill Details & We Will Contact You</p>
-</div>
-
-<div style="
-max-width:700px;
-margin:auto;
+.process-box{
 background:white;
 padding:30px;
 border-radius:15px;
-">
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
 
-<form>
+.process-number{
+font-size:40px;
+font-weight:bold;
+color:#D4AF37;
+margin-bottom:10px;
+}
 
-<input type="text" placeholder="Your Name"
-style="width:100%;padding:15px;margin-bottom:15px;">
+</style><div class="container"><h2 class="section-title">
+How We <span class="gold">Work</span>
+</h2><div class="process-grid"><div class="process-box">
+<div class="process-number">1</div>
+<p>Contact Us</p>
+</div><div class="process-box">
+<div class="process-number">2</div>
+<p>Free Site Visit</p>
+</div><div class="process-box">
+<div class="process-number">3</div>
+<p>Design & Estimate</p>
+</div><div class="process-box">
+<div class="process-number">4</div>
+<p>Manufacturing</p>
+</div><div class="process-box">
+<div class="process-number">5</div>
+<p>Installation</p>
+</div></div></div></section><!-- ================= STATS ================= --><section class="stats"><style>
 
-<input type="tel" placeholder="Mobile Number"
-style="width:100%;padding:15px;margin-bottom:15px;">
+.stats{
+padding:90px 0;
+}
 
-<input type="text" placeholder="City"
-style="width:100%;padding:15px;margin-bottom:15px;">
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:50px;
+}
 
-<select style="width:100%;padding:15px;margin-bottom:15px;">
-<option>Full Home Interior</option>
+.stat-box{
+text-align:center;
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.stat-box h3{
+font-size:45px;
+color:#D4AF37;
+}
+
+</style><div class="container"><h2 class="section-title">
+Our <span class="gold">Achievements</span>
+</h2><div class="stats-grid"><div class="stat-box">
+<h3>50+</h3>
+<p>Projects Completed</p>
+</div><div class="stat-box">
+<h3>100+</h3>
+<p>Happy Clients</p>
+</div><div class="stat-box">
+<h3>5+</h3>
+<p>Years Experience</p>
+</div><div class="stat-box">
+<h3>24H</h3>
+<p>Response Time</p>
+</div></div></div></section><!-- ================= REVIEWS ================= --><section class="reviews"><style>
+
+.reviews{
+padding:90px 0;
+background:#fafafa;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.review{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.stars{
+color:#D4AF37;
+font-size:20px;
+margin-bottom:15px;
+}
+
+</style><div class="container"><h2 class="section-title">
+Customer <span class="gold">Reviews</span>
+</h2><div class="review-grid"><div class="review">
+<div class="stars">★★★★★</div>
+<p>Excellent quality furniture and professional service.</p>
+<b>- Happy Client</b>
+</div><div class="review">
+<div class="stars">★★★★★</div>
+<p>Very satisfied with the modular kitchen project.</p>
+<b>- Home Owner</b>
+</div><div class="review">
+<div class="stars">★★★★★</div>
+<p>Premium workmanship and timely completion.</p>
+<b>- Customer</b>
+</div></div></div></section><!-- ================= ESTIMATE FORM ================= --><section id="estimate" class="estimate"><div class="container"><h2 class="section-title">
+Get Your <span class="gold">Free Estimate</span>
+</h2><p style="text-align:center;margin-bottom:30px;">
+✅ Free Site Visit &nbsp; | &nbsp;
+✅ Free Design Consultation &nbsp; | &nbsp;
+✅ Free Cost Estimate
+</p><div class="estimate-form"><input type="text" placeholder="Full Name" required><input type="tel" placeholder="Phone Number" required><input type="text" placeholder="City" required><select required><option value="">Select Project Type</option><optgroup label="Furniture">
+<option>Custom Furniture</option>
+<option>Bedroom Furniture</option>
+<option>Living Room Furniture</option>
+<option>Dining Furniture</option>
+<option>Office Furniture</option>
+<option>TV Unit</option>
+<option>Sofa Set</option>
+</optgroup><optgroup label="Doors">
+<option>Main Entrance Door</option>
+<option>Designer Door</option>
+<option>Wooden Door</option>
+<option>Room Door</option>
+<option>Custom Door</option>
+</optgroup><optgroup label="Interior">
 <option>Modular Kitchen</option>
 <option>Wardrobe</option>
-<option>Doors</option>
-<option>Furniture</option>
-<option>Custom Requirement</option>
-</select>
-
-<input type="text" placeholder="Approx Area (sqft)"
-style="width:100%;padding:15px;margin-bottom:15px;">
-
-<textarea placeholder="Requirement"
-style="width:100%;padding:15px;height:120px;margin-bottom:15px;"></textarea>
-
-<a href="https://wa.me/918209142748"
-class="btn btn-whatsapp"
-style="display:block;text-align:center;">
+<option>Bedroom Interior</option>
+<option>Office Interior</option>
+<option>Complete Home Interior</option>
+</optgroup></select><select required><option value="">Select Budget</option><option>Under ₹1 Lakh</option>
+<option>₹1 Lakh - ₹2 Lakh</option>
+<option>₹2 Lakh - ₹5 Lakh</option>
+<option>₹5 Lakh - ₹10 Lakh</option>
+<option>₹10 Lakh+</option>
+<option>Custom Budget</option></select><textarea rows="5" placeholder="Describe Your Requirement"></textarea><button class="submit-btn">
 Get Free Estimate
-</a>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
+</button><p style="margin-top:15px;text-align:center;">
+🔒 Your information is secure and will never be shared.
+</p></div></div></section><!-- ================= MANUFACTURING SECTION ================= --><section class="about"><div class="container"><h2 class="section-title">
+Furniture <span class="gold">Manufacturing</span>
+</h2><p>
+Unlike many interior companies, BB ELITE designs and manufactures
+custom furniture and premium wooden doors with attention to
+quality, durability and craftsmanship.
+</p></div></section><!-- ================= DOOR COLLECTION ================= --><section class="services"><div class="container"><h2 class="section-title">
+Door <span class="gold">Collection</span>
+</h2><div class="service-grid"><div class="service-box">
+<h3>Main Doors</h3>
+<p>Premium entrance doors with elegant finishes.</p>
+</div><div class="service-box">
+<h3>Designer Doors</h3>
+<p>Luxury custom-made designer door solutions.</p>
+</div><div class="service-box">
+<h3>Room Doors</h3>
+<p>Modern and durable doors for every room.</p>
+</div><div class="service-box">
+<h3>Custom Doors</h3>
+<p>Designed according to your requirements.</p>
+</div></div></div></section><!-- ================= FURNITURE COLLECTION ================= --><section class="services"><div class="container"><h2 class="section-title">
+Furniture <span class="gold">Collection</span>
+</h2><div class="service-grid"><div class="service-box">
+<h3>Beds</h3>
+<p>Luxury and custom bedroom furniture.</p>
+</div><div class="service-box">
+<h3>Wardrobes</h3>
+<p>Modern wardrobes with smart storage.</p>
+</div><div class="service-box">
+<h3>TV Units</h3>
+<p>Elegant TV units for modern homes.</p>
+</div><div class="service-box">
+<h3>Office Furniture</h3>
+<p>Tables, cabins and office solutions.</p>
+</div><div class="service-box">
+<h3>Dining Sets</h3>
+<p>Premium dining tables and chairs.</p>
+</div><div class="service-box">
+<h3>Custom Furniture</h3>
+<p>Furniture made exactly to your needs.</p>
+</div></div></div></section>
